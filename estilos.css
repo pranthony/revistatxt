@@ -1,0 +1,130 @@
+:root{
+    /*colores*/
+    --orange:  rgb(211, 93, 25);
+    --white: white;
+
+    /*tamanos*/
+    --large: 5rem;
+    --medium:3.5rem;
+    --small:1.5rem;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto Condensed", Sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+}
+
+.w-100p {
+    width: 100%;
+}
+.h-100p{
+    height: 100%;
+}
+.header__portada {
+    background-image: url(banner-festival-de-las-humanidades.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 30px 15%;
+}
+
+.portada__brand {
+    height: 55px;
+    gap: 10px
+}
+
+.portada__marca {
+    font-variant: small-caps;
+    font-size: 20px;
+    border-left: 2px solid black;
+    padding: 5px 10px;
+}
+
+.portada__banner {
+    margin-top: 80px;
+}
+
+.banner__titulo {
+    font-size: var(--large);
+}
+
+.banner__descripcion {
+    color: var(--white)
+}
+
+.nav {
+    border-bottom: 1px solid var(--orange);
+}
+
+.nav__menu {
+    padding: 0px 15%;
+    justify-content: space-evenly;
+}
+
+.nav__item {
+    user-select: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border:none;
+    background: none;
+    color:var(--orange);
+    font-size: 15px;
+}
+
+.nav__item:hover {
+    background-color: rgb(0, 0, 0, 0.05);
+}
+
+.about__menu, .normas__menu, .archivo__menu {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    background: white;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.1);
+}
+
+#about button:focus + .about__menu, 
+#normas button:focus + .normas__menu,
+#archivo button:focus + .archivo__menu{
+    display: grid;
+    opacity: 1;
+}
+
+.about__link, .normas__link, .archivo__link {
+    color: var(--orange);
+    padding: 10px 25px;
+}
+
+.about__link:hover, .normas__link:hover, .archivo__link:hover {
+    border-left: 5px solid var(--orange);
+    background-color: rgb(163, 66, 9, 0.3);
+    margin-left: -5px;
+}
+
+.no-display {
+    display: none;
+}
+@media (max-width:900px) {
+    .banner__titulo {
+        font-size: var(--medium);
+    }
+    .banner__descripcion {
+        font-size: var(--small);
+    }
+    .header__portada {
+        padding: 30px 5%;
+    }
+    .nav__menu {
+        padding: 0px 5%;
+    }
+}
