@@ -19,70 +19,310 @@
                 </h1>
             </div>
         </div>
-        <nav class="nav">
+        <nav class="header__nav">
             <ul class="nav__menu flex">
-                <a href="">
-                    <li class="nav__item">Inicio</li>
-                </a>
-                <li  id="about">
-                    <button class="nav__item">
+                <li class="menu__inicio tablink nav__item" 
+                    onclick="openTab(event, 'inicio-tab')">
+                    Inicio
+                </li>
+                <li id="about">
+                    <div class="nav__item">
                         Acerca de <i class="fas fa-sort-down"></i>
-                    </button>
-                    <ul class="about__menu ">
-                        <a href="" class="about__link">
-                            <li class="about__item">Sobre la revista</li>
-                        </a>
-                        <a href="" class="about__link">
-                            <li class="about__item">Equipo editorial</li>
-                        </a>
-                        <a href="" class="about__link">
-                            <li class="about__item">Contacto</li>
-                        </a>
+                    </div>
+                    
+                    <ul class="about__menu">
+                        <li class="tablink about__link" 
+                            onclick="openTab(event, 'revista')">
+                            Sobre la revista
+                            
+                        </li>
+                        <li class="tablink about__link" 
+                            onclick="openTab(event, 'equipo')">
+                            Equipo editorial
+                        </li>
+                        <li class="tablink about__link" 
+                            onclick="openTab(event, 'contacto')">
+                            Contacto
+                        </li>
                     </ul>
                 </li>
-                <a href="">
-                    <li class="nav__item">Actual</li>
-                </a>
-                
+
+                <li class="tablink nav__item" 
+                    onclick="openTab(event, 'actual')">
+                    Actual
+                </li>
+
                 <li id="archivo">
-                    <button class="nav__item">
+                    <div class="nav__item">
                         Archivo <i class="fas fa-sort-down"></i>
-                    </button>
+                    </div>
                     <ul class="archivo__menu">
-                        <a href="" class="archivo__link">
-                            <li class="archivo__item">Anteriores (2021)</li>
-                        </a>
-                        <a href="" class="archivo__link">
-                            <li class="archivo__item">Archivo histórico (2009-2014)</li>
-                        </a>
+                        <li class="tablink archivo__link"
+                            onclick="openTab(event, 'anteriores')">
+                            Anteriores (2021)
+                        </li>
+                        <li class="tablink archivo__link"
+                            onclick="openTab(event, 'historico')">
+                            Archivo histórico (2009-2014)
+                        </li>
                     </ul>
                 </li>
-                
+
                 <li id="normas">
-                    <button class="nav__item">
+                    <div class="nav__item">
                         Normas Editoriales <i class="fas fa-sort-down"></i>
-                    </button>
+                    </div>
                     <ul class="normas__menu">
-                        <a href="" class="normas__link">
-                            <li class="normas__item">Normas para autores</li>
-                        </a>
-                        <a href="" class="normas__link">
-                            <li class="normas__item">Política de Acceso Abierto </li>
-                        </a>
+                        <li class="normas__item normas__link"
+                            onclick="openTab(event, 'normas__autores')">
+                            Normas para autores
+                        </li>
+                        <li class="normas__item normas__link"
+                            onclick="openTab(event, 'politica')">
+                            Política de Acceso Abierto 
+                        </li>
                     </ul>
                 </li>
-                
+
             </ul>
         </nav>
     </header>
     <main class="contenedor">
         <section class="articulo">
-            <p id="issn">ISSN: </p>
-            <p class="" id="e-ISSN">e-ISSN</p>
+            <div class="articulo__inicio">
+                <div class="inicio tab" id="inicio-tab">
+                    <p class="issn">ISSN:</p>  <!--actulizar-->
+                    <p class="e-issn">e-ISSN:</p> <!--actulizar-->
+                    <br>
+                    <p class="inicio__contenido">
+                        <b>La Revista TXT de Humanidades y Ciencias Sociales</b>
+                         (segunda época) es una
+                        publicación anual y es editada por el Área de Investigación del proyecto
+                        LAVAPERÚ (<a href="https://lavaperu.com/">www.lavaperu.com</a>). La revista tiene como objetivo aportar en la
+                        difusión, promoción y desarrollo de las humanidades, las ciencias sociales, el arte y la
+                        pedagogía en el Perú. Por ello, nuestra finalidad es difundir y publicar estudios y/o
+                        investigaciones en torno a los diferentes temas que analizan cada una de nuestras
+                        ediciones. La Revista TXT de Humanidades y Ciencias Sociales tiene como origen la
+                        Revista TXT editada entre el 2009 y el 2014 por el Colectivo Interdisciplinario TXT,
+                        semilla del proyecto LAVAPERÚ. <br>
+                        Periodicidad
+                    </p>
+                    <h3 class="inicio__actual titulo-h3">Número actual</h3>
+                    <!--Aqui se deben ingresar los numeros actules-->
+
+                </div>
+            </div>
+
+            <div class="articulo__acerca">
+                <div class="revista tab no-display" id="revista">
+                    <h3 class="titulo-h3">Sobre la revista</h3>
+                    <p class="revista__contenido">
+                        La Revista TXT de Humanidades y Ciencias Sociales (segunda época) es una
+                        revista anual y es editada por el Área de Investigación del proyecto
+                        LAVAPERÚ (<a href="https://lavaperu.com/">www.lavaperu.com</a>). La revista tiene como objetivo aportar en
+                        la difusión, promoción y desarrollo de las humanidades, las ciencias sociales,
+                        el arte y la pedagogía en el Perú. Por ello, nuestra finalidad es difundir y
+                        publicar estudios y/o investigaciones en torno a los diferentes temas que
+                        analizan cada una de nuestras ediciones. La Revista TXT de Humanidades y
+                        Ciencias Sociales tiene como origen la Revista TXT editada entre el 2009 y el
+                        2014 por el Colectivo Interdisciplinario TXT, semilla del proyecto
+                        LAVAPERÚ.
+                    </p>
+                </div>
+                <div class="equipo tab no-display" id="equipo">
+                    <div class="path">
+                        <a href="./revista.html">
+                            <h4>Inicio</h4>
+                        </a>
+                        <span>/</span>
+                        <p class="destino">Equipo editorial</p>
+                    </div>
+                    <h3 class="titulo-h3">Dirección</h3>
+                    <ul>
+                        <li>Pavel Aguilar (Pontificia Universidad Católica del Perú)</li>
+                        <li>Javier Suárez (Universidad Nacional Mayor de San Marcos)</li>
+                    </ul>
+                    <h3 class="titulo-h3">Comité Editorial</h3>
+                    <ul>
+                        <li>Rocío del Águila (City University of New York)</li>
+                        <li>Carlos Torres Astocóndor (University of California Davis)</li>
+                        <li>Pamela Gálvez (Pontificia Universidad Católica del Perú)</li>
+                        <li>Jonathan Narciso (Universidad Antonio Ruíz de Montoya)</li>
+                        <li>Bruno Nassi (Boston University)</li>
+                    </ul>
+                </div>
+                <div class="contacto tab no-display" id="contacto">
+                    <h3 class="titulo-h3">Contacto</h3>
+                    <p><b>Javier Suárez Trejo</b></p>
+                    <ul>
+                        <li>Coordinador del Área de Investigación de LAVAPERÚ</li>
+                        <li>Correo electrónico: <span class="copy">publicalavaperu@gmail.com</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="articulo__normas">
+                <div class="normas__autores tab no-display" id="normas__autores">
+                    
+                </div>
+                <div class="tab no-display" id="politica">
+                    <h3 class="titulo-h3">Política de Acceso Abierto</h3>
+                    <p>
+                        La <b>Revista TXT</b> publica artículos originales e inéditos en la modalidad acceso
+                        abierto, disponibles para consulta de manera gratuita desde el primer número de la
+                        revista. Por ello no cobra ningún tipo de cargo por envío o procesamiento de
+                        artículos.
+                    </p>
+                    <br>
+                    <p>
+                        El autor/los coautores consienten que LAVAPERÚ publique la <b>Revista TXT</b> de su
+                        titularidad (en la cual se incluye su “artículo”), bajo la Licencia Creative Commons
+                        Atribución 4.0 Internacional (CC BY 4.0) que permite a otros distribuir, mezclar,
+                        ajustar y construir a partir de su obra, incluso con fines comerciales, siempre que sea
+                        reconocida la autoría de la creación original.
+                    </p>
+                    <br>
+                    <p>
+                        El autor/los coautores conservan los derechos de autor sobre el artículo.
+                    </p>
+                    <br>
+                    <p>
+                        En caso de que el autor/los coautores deseen reeditar el artículo aceptado, deben
+                        comprometerse a consignar la fecha en la cual se publicó originalmente en la <b>Revista
+                            TXT</b>, así como a notificar al editor de la revista acerca de esta reedición.
+                    </p>
+                    <br>
+                    <p>
+                        Por último, los autores pueden archivar, en el repositorio o sitio web personal o de
+                        su institución, tanto la versión del artículo previa a la revisión por pares como la
+                        publicada, esta última bajo el formato de la revista o con alguna referencia a su
+                        próxima publicación en la <b>Revista TXT</b>. La revista, inmediatamente después de la
+                        publicación de un artículo, velará por su inclusión en las bases de datos y sistemas de
+                        indexación en las que participamos, además de realizar distinto tipo de estrategias de
+                        comunicación para lograr su debida difusión en medios digitales.
+                    </p>
+                </div>
+            </div>
+
+            <div class="articulo__informacion">
+                <div class="lectores tab no-display" id="lectores">
+                    <div class="path">
+                        <a href="revista.html">
+                            <h4>Inicio</h4>
+                        </a>
+                        <span>/</span>
+                        <p class="destino">Información para lectores</p>
+                    </div>
+                
+                    <p class="lectores__contenido">
+                        Animamos a los lectores/as a registrarse en el servicio
+                        de notificación de publicaciones de la revista. Utilice el
+                        enlace Registro de la parte superior de la página de
+                        inicio de la revista. Como resultado del registro, el
+                        lector/a recibirá por correo electrónico la Tabla de
+                        contenidos de cada número de la revista. Esta lista
+                        también permite que se le atribuya a la revista un
+                        cierto nivel de apoyo o número de lectores/as.
+                        Consulte la Declaración de privacidad de la revista,
+                    que garantiza a los lectores/as que sus nombres y
+                    direcciones de correo electrónico no se usarán con
+                    otros fines.
+                </p>
+
+                </div>
+                <div class="autores tab no-display" id="autores">
+                    <div class="path">
+                        <a href="revista.html">
+                            <h4>Inicio</h4>
+                        </a>
+                        <span>/</span>
+                        <p class="destino">Información para autores</p>
+                    </div>
+                    <p class="autores__contenido">
+                        ¿Está interesado en publicar en la revista? Se
+                        recomienda revisar la página Acerca de la revista para
+                        consultar las políticas de sección de la revista, así
+                        como las Normas para autores. Los autores/as
+                        deben registrarse en la revista antes de publicar o, si ya
+                        están registrados, pueden simplemente iniciar sesión y
+                        comenzar el proceso de cinco pasos.
+                    </p>
+
+                </div>
+                <div class="bibliotecarios tab no-display" id="bibliotecarios">
+                    <div class="path">
+                        <a href="recista.html">
+                            <h4>Inicio</h4>
+                        </a>
+                        <span>/</span>
+                        <p class="destino">Información para bibliotecarios</p>
+                    </div>
+                    <p class="bibliotecarios__contenido">
+                        Se recomienda a los investigadores/as
+                        bibliotecarios/as que incluyan esta revista en su listado
+                        de revistas electrónicas. Asimismo, cabría destacar que
+                        el sistema de publicación de código abierto de esta
+                        revista es apto para bibliotecas con personal docente
+                        que desee editar sus propias revistas (ver Open Journal
+                        Systems).
+                    </p>
+
+                </div>
+            </div>
 
         </section>
-        <aside class="aside"></aside>
+        <aside class="aside grid">
+            <div class="aside__social">
+                <h3 class="social__titulo">Redes sociales</h3>
+                <ul class="social__icons flex">
+                    <li class="icons__item">
+                        <a href="https://www.facebook.com/lavaperu/">
+                            <img src="./img/logo_fb.png" alt="facebook" class="h-100p">
+                        </a>
+                    </li>
+                    <li class="icons__item">
+                        <a href="https://www.instagram.com/proyectolavaperu/?hl=es">
+                            <img src="./img/logo_ig.png" alt="instagram" class="h-100p">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="aside__info">
+                <h3 class="info__titulo">Información</h3>
+                <ul class="info__menu">
+                    <li class="info__item">
+                        <button class="info__link tablink" 
+                            onclick="openTab(event, 'lectores')">
+                            Para lectores
+                        </button>
+                    </li>
+                    <li class="info__item">
+                        <button class="info__link tablink" 
+                            onclick="openTab(event, 'autores')"> 
+                            Para autores
+                        </button>
+                    </li>
+                    <li class=" info__item">
+                        <button class="info__link tablink" 
+                            onclick="openTab(event, 'bibliotecarios')")>
+                            Para bibliotecarios
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            
+        </aside>
     </main>
 </body>
 <script>
+    function openTab(evt, tabName){
+        var i, x, tablinks;
+        x = document.getElementsByClassName("tab"); 
+        for ( i=0; i < x.length; i++) { 
+            x[i].style.display="none" ;
+        }
+        tablinks=document.getElementsByClassName("tablink"); 
+        document.getElementById(tabName).style.display="block";
+    } 
+    
 </script>

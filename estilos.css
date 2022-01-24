@@ -14,8 +14,11 @@
     font-family: "Roboto Condensed", Sans-serif;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
-
+a{
+    color:var(--orange)
+}
 .flex {
     display: flex;
     align-items: center;
@@ -62,57 +65,127 @@
     color: var(--white)
 }
 
-.nav {
+.header__nav {
     border-bottom: 1px solid var(--orange);
 }
 
 .nav__menu {
     padding: 0px 15%;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
-.nav__item {
-    user-select: none;
+.nav__item {  
     cursor: pointer;
     padding: 10px 15px;
-    border:none;
-    background: none;
     color:var(--orange);
     font-size: 15px;
 }
 
-.nav__item:hover {
-    background-color: rgb(0, 0, 0, 0.05);
-}
-
 .about__menu, .normas__menu, .archivo__menu {
     display: none;
-    opacity: 0;
+    
+}
+
+#about:hover .about__menu,
+#archivo:hover .archivo__menu,
+#normas:hover .normas__menu
+{
+    display: grid;
     position: absolute;
     background: white;
-    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.1);
+    box-shadow: 2px 4px 10px rgb(0, 0, 0, 0.2);
+    border-radius: 5px;
 }
 
-#about button:focus + .about__menu, 
-#normas button:focus + .normas__menu,
-#archivo button:focus + .archivo__menu{
-    display: grid;
-    opacity: 1;
-}
-
-.about__link, .normas__link, .archivo__link {
+ .normas__link, .archivo__link, .about__link{
     color: var(--orange);
     padding: 10px 25px;
+    font-size: 15px;
+    display: grid;
+    cursor: pointer;
 }
 
-.about__link:hover, .normas__link:hover, .archivo__link:hover {
+.about__link:hover,
+.normas__link:hover, 
+.archivo__link:hover 
+{
     border-left: 5px solid var(--orange);
-    background-color: rgb(163, 66, 9, 0.3);
+    background-color: rgb(163, 66, 9, 0.2);
     margin-left: -5px;
 }
 
 .no-display {
     display: none;
+}
+
+.contenedor{
+    margin: 50px 15%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap:10%;
+    
+}
+
+.aside{
+    padding:30px 0px;
+    gap:50px
+}
+.aside h3{
+    color: rgb(0, 0, 0, 0.7);
+    margin: 20px 0px;
+}
+.social__icons{
+    justify-content: space-around;
+    height:70px
+}
+.info__link{
+    color: var(--orange);
+    background: none;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btn-red{
+    color: black;
+}
+p{
+    text-align: justify;
+    line-height: 1.6;
+    color: rgb(0, 0, 0, 0.7);
+}
+.path{
+    display: flex;
+    gap:10px;
+    margin: 20px 0px;
+
+}
+.path a{
+    color: var(--orange);
+}
+.path p{
+    font-size: 15px;
+    line-height: normal;
+}
+.inicio__actual{
+    margin: 10px 100px;
+
+}
+.titulo-h3{
+    padding: 20px 0px ;
+    font-size: 2rem;
+    color: rgb(0, 0, 0, 0.7);
+    font-weight: normal;
+}
+.equipo li,
+.contacto li{
+    text-align: justify;
+    line-height: 2.0;
+    
+    color: rgb(0, 0, 0, 0.7);
+}
+.copy{
+    font-weight: bold;
+    cursor: pointer;
 }
 @media (max-width:900px) {
     .banner__titulo {
@@ -125,6 +198,22 @@
         padding: 30px 5%;
     }
     .nav__menu {
-        padding: 0px 5%;
+        padding: 0px;
+    }
+    .contenedor{
+        margin: 50px 5%;
+        grid-template-columns: 1fr;
+    }
+    .aside{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+}
+@media (max-width:550px) {
+    .nav__menu {
+        display: grid;
+        place-items: center;
     }
 }
