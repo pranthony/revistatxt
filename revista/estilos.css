@@ -2,17 +2,26 @@
     /*colores*/
     --orange:  rgb(211, 93, 25);
     --white: white;
-
+    --texto: #42332e;
+    --fondo: #fff;
+    --shadow:rgb(0, 0, 0, 0.2);
+    
     /*tamanos*/
     --large: 5rem;
     --medium:3.5rem;
     --small:1.5rem;
 }
+body.dark-theme{
+    background-color: var(--fondo);
+    --texto: #fff;
+    --fondo: #121212;
+    --shadow:rgba(255, 255, 255, 0.2);
+}
 * {
     margin: 0px;
     padding: 0px;
     font-family: "Roboto Condensed", Sans-serif;
-    list-style: none;
+    
     text-decoration: none;
     box-sizing: border-box;
 }
@@ -35,26 +44,37 @@ a{
     height: 100%;
 }
 .header__portada {
-    background-image: url(banner-festival-de-las-humanidades.jpg);
+    background-image: url(./img/banner-festival-de-las-humanidades.jpg);
     background-position: center center;
     background-size: cover;
-    padding: 30px 15%;
+    padding: 25px 0px;
 }
 
 .portada__brand {
     height: 55px;
-    gap: 10px
+    gap: 10px;
+    width:70%;
+    margin: 0px auto;
 }
+.portada__logo{
+    cursor: pointer;
+}
+.portada__logo:active{
+    transform: rotate(5deg);
 
+}
 .portada__marca {
     font-variant: small-caps;
     font-size: 20px;
     border-left: 2px solid black;
     padding: 5px 10px;
+    color: black;
+    line-height: 20px;
 }
 
 .portada__banner {
-    margin-top: 80px;
+    width:70%;
+    margin: 80px auto 0px;   
 }
 
 .banner__titulo {
@@ -72,6 +92,7 @@ a{
 .nav__menu {
     padding: 0px 15%;
     justify-content: space-around;
+    list-style: none;
 }
 
 .nav__item {  
@@ -79,6 +100,9 @@ a{
     padding: 10px 15px;
     color:var(--orange);
     font-size: 15px;
+}
+.nav__item:hover{
+    list-style:disc
 }
 
 .about__menu, .normas__menu, .archivo__menu {
@@ -92,8 +116,8 @@ a{
 {
     display: grid;
     position: absolute;
-    background: white;
-    box-shadow: 2px 4px 10px rgb(0, 0, 0, 0.2);
+    background: var(--fondo);
+    box-shadow: 2px 4px 10px var(--shadow);
     border-radius: 5px;
 }
 
@@ -119,24 +143,34 @@ a{
 }
 
 .contenedor{
-    margin: 50px 15%;
+    width: 70%;
+    margin: 50px auto;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    gap:10%;
+    gap:25px;
     
 }
 
 .aside{
-    padding:30px 0px;
-    gap:50px
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 25px;
+    
 }
 .aside h3{
-    color: rgb(0, 0, 0, 0.7);
+    color: var(--texto);
     margin: 20px 0px;
 }
 .social__icons{
-    justify-content: space-around;
-    height:70px
+    
+    height:70px;
+    list-style: none;
+    
+}
+.info__menu{
+    list-style: none;
 }
 .info__link{
     color: var(--orange);
@@ -144,14 +178,16 @@ a{
     border: none;
     font-size: 15px;
     cursor: pointer;
+    
 }
 .btn-red{
     color: black;
 }
 p{
     text-align: justify;
-    line-height: 1.6;
-    color: rgb(0, 0, 0, 0.7);
+    line-height: 1.8;
+    color: var(--texto);
+    font-size: 17px;
 }
 .path{
     display: flex;
@@ -173,41 +209,70 @@ p{
 .titulo-h3{
     padding: 20px 0px ;
     font-size: 2rem;
-    color: rgb(0, 0, 0, 0.7);
+    color: var(--texto);
     font-weight: normal;
+}
+.lista__texto{
+    color: var(--texto);
 }
 .equipo li,
 .contacto li{
     text-align: justify;
     line-height: 2.0;
+    list-style: none;
+    color: var(--texto);
+}
+.normas__autores ol{
+    text-align: justify;
+    line-height: 2.0;
     
-    color: rgb(0, 0, 0, 0.7);
+    color: var(--texto);
+    
 }
 .copy{
     font-weight: bold;
     cursor: pointer;
 }
-@media (max-width:900px) {
+.normas__editoriales ul{
+   list-style: none;
+}
+.normas__editoriales  ul > li::before{
+    content: "✔ ";
+    font-weight: bold;
+    
+}
+#footer{
+    background-image: url("./img/footer.jpg");
+    height: 150px;
+    background-size: cover;
+    background-position: center ;
+    
+}
+@media only screen and (max-width:900px) {
     .banner__titulo {
         font-size: var(--medium);
     }
     .banner__descripcion {
         font-size: var(--small);
     }
-    .header__portada {
-        padding: 30px 5%;
+    .portada__brand, .portada__banner {
+        width: 90%;
+
     }
     .nav__menu {
         padding: 0px;
     }
     .contenedor{
+        width: 90%;
         margin: 50px 5%;
         grid-template-columns: 1fr;
     }
     .aside{
         display: flex;
         justify-content: space-around;
+        flex-direction: row;
         flex-wrap: wrap;
+        align-items: center;
         gap: 0px;
     }
 }
