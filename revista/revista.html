@@ -5,64 +5,58 @@
 
 
 </head>
-
 <body id="body">
     <header class="header">
         <div class="header__portada">
             <div class="portada__brand flex">
-                <img src="./img/logo.jpg" alt="" class="portada__logo h-100p" onclick="changeTheme()">
-                <p class="portada__marca">Laboratorio de Vanguardia <br> Pedagógica Peruana</p>
+                <img src="./img/Recurso 5.png" alt="" class="portada__logo h-100p">
+                <p class="portada__marca">
+                    Laboratorio de <br> Vanguardia <br> Pedagógica
+                </p> 
             </div>
             <div class="portada__banner">
-                <h1 class="banner__titulo">Revista TXT</h1>
-                <h1 class="banner__descripcion">De Humanidades y Ciencias Sociales
+                <h1 class="banner__titulo">REVISTA TXT</h1>
+                <h1 class="banner__descripcion">DE HUMANIDADES Y CIENCIAS SOCIALES
                 </h1>
             </div>
         </div>
-        <nav class="header__nav">
+        <nav class="header__nav flex">
             <ul class="nav__menu flex">
-                <li class="menu__inicio tablink nav__item" 
-                    onclick="openTab(event, 'inicio-tab')">
+                <li class="menu__inicio tablink nav__item" onclick="openTab(event, 'inicio-tab')">
                     Inicio
                 </li>
                 <li id="about" class="nav__item">
                     <div class="">
                         Acerca de <i class="fas fa-sort-down"></i>
                     </div>
-                    
+
                     <ul class="about__menu">
-                        <li class="tablink about__link" 
-                            onclick="openTab(event, 'revista')">
+                        <li class="tablink about__link" onclick="openTab(event, 'revista')">
                             Sobre la revista
-                            
+
                         </li>
-                        <li class="tablink about__link" 
-                            onclick="openTab(event, 'equipo')">
+                        <li class="tablink about__link" onclick="openTab(event, 'equipo')">
                             Equipo editorial
                         </li>
-                        <li class="tablink about__link" 
-                            onclick="openTab(event, 'contacto')">
+                        <li class="tablink about__link" onclick="openTab(event, 'contacto')">
                             Contacto
                         </li>
                     </ul>
                 </li>
 
-                <li class="tablink nav__item" 
-                    onclick="openTab(event, 'actual')">
-                    Actual
+                <li class="tablink nav__item" onclick="openTab(event, 'actual')">
+                    Actual (2022)
                 </li>
 
                 <li id="archivo" class="nav__item">
-                    <div >
+                    <div>
                         Archivo <i class="fas fa-sort-down"></i>
                     </div>
                     <ul class="archivo__menu">
-                        <li class="tablink archivo__link"
-                            onclick="openTab(event, 'anteriores')">
+                        <li class="tablink archivo__link" onclick="openTab(event, 'anteriores')">
                             Anteriores (2021)
                         </li>
-                        <li class="tablink archivo__link"
-                            onclick="openTab(event, 'historico')">
+                        <li class="tablink archivo__link" onclick="openTab(event, 'historico')">
                             Archivo histórico (2009-2014)
                         </li>
                     </ul>
@@ -73,39 +67,50 @@
                         Normas Editoriales <i class="fas fa-sort-down"></i>
                     </div>
                     <ul class="normas__menu">
-                        <li class="normas__item normas__link"
-                            onclick="openTab(event, 'normas__autores')">
+                        <li class="normas__item normas__link" onclick="openTab(event, 'normas__autores')">
                             Normas para autores
                         </li>
-                        <li class="normas__item normas__link"
-                            onclick="openTab(event, 'politica')">
-                            Política de Acceso Abierto 
+                        <li class="normas__item normas__link" onclick="openTab(event, 'politica')">
+                            Política de Acceso Abierto
                         </li>
                     </ul>
                 </li>
 
             </ul>
+            <form action="" class="nav__form flex">
+                <div>
+                    <button class="nav__buscar">
+                        <i class="fas fa-search"></i>                    
+                    </button>
+                    <input type="text" name="" id="nav__input" placeholder="Buscar">
+                </div>
+                <i class="fas fa-moon " id="mode" onclick="changeTheme()"></i>
+            </form>
         </nav>
+
     </header>
     <main class="contenedor">
         <section class="articulo">
             <div class="articulo__inicio">
                 <div class="inicio tab" id="inicio-tab">
-                    <p class="issn">ISSN:</p>  <!--actulizar-->
-                    <p class="e-issn">e-ISSN:</p> <!--actulizar-->
+                    <p class="issn">ISSN:</p>
+                    <!--actulizar-->
+                    <p class="e-issn">e-ISSN:</p>
+                    <!--actulizar-->
                     <br>
                     <p class="inicio__contenido">
                         <b>La Revista TXT de Humanidades y Ciencias Sociales</b>
-                         (segunda época) es una
+                        (segunda época) es una
                         publicación anual y es editada por el Área de Investigación del proyecto
-                        LAVAPERÚ (<a href="https://lavaperu.com/">www.lavaperu.com</a>). La revista tiene como objetivo aportar en la
+                        LAVAPERÚ (<a href="https://lavaperu.com/">www.lavaperu.com</a>). La revista tiene como objetivo
+                        aportar en la
                         difusión, promoción y desarrollo de las humanidades, las ciencias sociales, el arte y la
                         pedagogía en el Perú. Por ello, nuestra finalidad es difundir y publicar estudios y/o
                         investigaciones en torno a los diferentes temas que analizan cada una de nuestras
                         ediciones. La Revista TXT de Humanidades y Ciencias Sociales tiene como origen la
                         Revista TXT editada entre el 2009 y el 2014 por el Colectivo Interdisciplinario TXT,
                         semilla del proyecto LAVAPERÚ. <br>
-                        Periodicidad
+                        Periodicidad: ANUAL.
                     </p>
                     <h3 class="inicio__actual titulo-h3">Número actual</h3>
                     <!--Aqui se deben ingresar los numeros actules-->
@@ -119,7 +124,8 @@
                     <p class="revista__contenido">
                         La Revista TXT de Humanidades y Ciencias Sociales (segunda época) es una
                         revista anual y es editada por el Área de Investigación del proyecto
-                        LAVAPERÚ (<a href="https://lavaperu.com/">www.lavaperu.com</a>). La revista tiene como objetivo aportar en
+                        LAVAPERÚ (<a href="https://lavaperu.com/">www.lavaperu.com</a>). La revista tiene como objetivo
+                        aportar en
                         la difusión, promoción y desarrollo de las humanidades, las ciencias sociales,
                         el arte y la pedagogía en el Perú. Por ello, nuestra finalidad es difundir y
                         publicar estudios y/o investigaciones en torno a los diferentes temas que
@@ -180,7 +186,9 @@
 
                         <!--Iterar los articulos aqui-->
                         <li class="contenedor__articulo">
-                            <a class="articulo__link" href="#"><h4>Amplificando el impacto del diseño a través de DesignOps</h4></a>
+                            <a class="articulo__link" href="#">
+                                <h4>Amplificando el impacto del diseño a través de DesignOps</h4>
+                            </a>
                             <p class="articulo__autor">Alexandra Mengoni Leon</p>
                             <a href="" class="articulo__recurso">PDF</a>
                         </li>
@@ -208,7 +216,9 @@
 
                         <!--Iterar los articulos aqui-->
                         <li class="contenedor__articulo">
-                            <a class="articulo__link" href="#"><h4>Amplificando el impacto del diseño a través de DesignOps</h4></a>
+                            <a class="articulo__link" href="#">
+                                <h4>Amplificando el impacto del diseño a través de DesignOps</h4>
+                            </a>
                             <p class="articulo__autor">Alexandra Mengoni Leon</p>
                             <a href="" class="articulo__recurso">PDF</a>
                         </li>
@@ -293,7 +303,7 @@
                     <ol class="normas__editoriales">
                         <li>
                             <h4>Texto</h4>
-                           
+
                             <ul class="lista__texto">
                                 <li>Normal (Times New Román, tamaño 12, interlineado 1,5), justificado.</li>
                                 <li>Tamaño de la hoja: A4. Configuración de página estándar Word (márgenes
@@ -301,8 +311,10 @@
                                 <li> Notas al pie: Times New Roman, tamaño 10.</li>
                                 <li>Paginación: el texto deberá estar numerado en forma correlativa, en la parte
                                     inferior derecha de la página.</li>
-                                <li>Se utilizarán las negritas para enfatizar y resaltar términos en el interior del texto.
-                                    Su empleo no es obligatorio, sino más bien depende del estilo personal del autor.</li>
+                                <li>Se utilizarán las negritas para enfatizar y resaltar términos en el interior del
+                                    texto.
+                                    Su empleo no es obligatorio, sino más bien depende del estilo personal del autor.
+                                </li>
                                 <li>Se utilizarán cursivas para términos en idiomas distintos del español.</li>
                                 <li>No utilice separación por sílabas.</li>
                                 <li>Incluya con moderación notas a pie de página, debe hacerse al final de la oración y
@@ -312,7 +324,7 @@
                         <br>
                         <li>
                             <h4 class="lista__texto">Título y Subtítulos</h4>
-                            
+
                             <ul>
                                 <li>Subtítulos: Times New Roman, 12; alineación a la izquierda y en negrita.</li>
                                 <li>Elimine toda la edición, formateo y numeración automática. Organice los títulos y
@@ -328,7 +340,7 @@
                         <br>
                         <li>
                             <h4 class="lista__texto">Nota biográfica</h4>
-                            <p>    
+                            <p>
                                 Todos los autores deberán enviar una nota biográfica, que deberá incluir lo
                                 siguiente: cargo actual, disciplina científica, seguidos por la dirección de correo
                                 electrónico (máximo de 100 palabras).
@@ -337,7 +349,7 @@
                         <br>
                         <li>
                             <h4 class="lista__texto">Cuadro, Gráficos e Imágenes</h4>
-                            
+
                             <ul>
                                 <li>Los cuadros o gráficos deben ser enviados en documento aparte en el programa
                                     original: Excel u otros, para poder ser adecuadamente diagramados.</li>
@@ -355,24 +367,26 @@
                                     respecto a la claridad de la información que se incluye.</li>
                                 <li>No utilizar fondos grises.</li>
                             </ul>
-                            
+
                         </li>
                         <br>
                         <li>
                             <h4 class="lista__texto">Citas en el texto</h4>
-                            
+
                             <ul>
                                 <li>pferentemente se solicita que el estilo de cita y referencia está basado en el
                                     Sistema APA (Asociación Americana de Psicología)</li>
                                 <li>Las notas al pie de página se usarán solamente para realizar comentarios
                                     complementarios, mas no para citas bibliográficas.</li>
                                 <li>No use “ibidem” ni “ibid.”.</li>
-                                <li>Las citas textuales que van al interior del texto deben estar entre comillas latinas o
+                                <li>Las citas textuales que van al interior del texto deben estar entre comillas latinas
+                                    o
                                     españolas (« ») y en redondas (letra normal).</li>
                                 <li>Si el fragmento citado incluye, a su vez, una cita en su interior o una frase entre
                                     comillas, se recurrirá a las inglesas (‘‘ ‘‘). El punto siemp irá inmediatamente
                                     después de las comillas. Ejemplo:
-                                    <p>En relación con este tema, afirma un destacado lingüista: «La idea según la cual “el
+                                    <p>En relación con este tema, afirma un destacado lingüista: «La idea según la cual
+                                        “el
                                         igualitarismo es doctrina aplicable a los hombres, pero no en absoluto a los
                                         idiomas” (Salvador 1992: 97) no tiene base lingüística alguna» (Moreno Cabrera
                                         2000: 233).</p>
@@ -385,16 +399,21 @@
                                         <li>Fragmento que se desea citar y que contiene una cita con una referencia en
                                             sistema clásico de citado. <br>
                                             El proceso […] conocido como “deslocalización de servicios” constituye un
-                                            mercado potencial de $330 mil millones que, según los analistas, solo estaría
-                                            aprovechado en un 10% actualmente y que podría llegar a significar más de 110
+                                            mercado potencial de $330 mil millones que, según los analistas, solo
+                                            estaría
+                                            aprovechado en un 10% actualmente y que podría llegar a significar más de
+                                            110
                                             billones de dólares en el año 2010 (Ribeiro, 2005).
                                         </li>
                                         <br>
-                                        <li>Fragmento anterior citado y con la referencia de la cita interna convertida en el
+                                        <li>Fragmento anterior citado y con la referencia de la cita interna convertida
+                                            en el
                                             sistema parentético. <br>
                                             Como señala Bossio (2008: 2): El proceso […] conocido como “deslocalización
-                                            de servicios” constituye un mercado potencial de $330 mil millones que, según los
-                                            analistas (Ribeiro 2005), solo estaría aprovechado en un 10% actualmente y que
+                                            de servicios” constituye un mercado potencial de $330 mil millones que,
+                                            según los
+                                            analistas (Ribeiro 2005), solo estaría aprovechado en un 10% actualmente y
+                                            que
                                             podría llegar a significar más de 110 billones de dólares en el año 2010.
                                         </li>
                                         <br>
@@ -409,11 +428,12 @@
                                     <br>
                                     <p>Las investigaciones sociolingüísticas de los últimos años han descartado de plano
                                         que las modalidades dialectales no estándares sean lógica o comunicativamente
-                                        inferiores a la estándar. Así lo indica un importante investigador americano: “Una
+                                        inferiores a la estándar. Así lo indica un importante investigador americano:
+                                        “Una
                                         observación detallada de las pruebas empíricas niega la psunción de que el Black
                                         English sea menos lógico que el inglés estándar o de que no sea competente para
                                         las abstracciones” (Baugh, citado por Moreno Cabrera 2000: 58).</p>
-                                        <br>
+                                    <br>
                                 </li>
                                 <li>Cuando se omite información en una cita textual, se deben emplear corchetes y
                                     tres puntos suspensivos en reemplazo del fragmento omitido ([…]), cuya
@@ -448,7 +468,8 @@
                                     acrónimo o su sigla. Ejemplos: (Noticias SER 2011), (Midis 2011).</li>
                                 <li>Cuando la obra citada tenga dos autores, deben figurar sus apellidos separados por
                                     un «y», como en el ejemplo a continuación: (Dargent y Muñoz 2010). Si hay más
-                                    de dos autores, solo se citará al primero, seguido por la abreviatura latina «et al.»,
+                                    de dos autores, solo se citará al primero, seguido por la abreviatura latina «et
+                                    al.»,
                                     que significa «y otros». Nótese que solo lleva un punto, al final, y que por ser un
                                     préstamo del latín debe escribirse en cursivas. Ejemplo: (Morlino et al. 2009).
                                     Únicamente emplearemos «et al.» en las referencias parentéticas: en la bibliografía
@@ -459,7 +480,7 @@
                         <br>
                         <li>
                             <h4 class="lista__texto">Fuentes de citado</h4>
-                            <br>
+
                             <ul>
                                 <li>Si lo citado pertenece a una página electrónica (web), la referencia corresponde
                                     al nombre del responsable individual o institucional. Cuando no exista
@@ -481,26 +502,26 @@
                         <br>
                         <li>
                             <h4 class="lista__texto">Bibliografía</h4>
-                            <br>
+
                             <p>El orden de la referencia bibliográfica debe ser: Apellido, Nombre, Título de la
                                 publicación (entre comillas si no fuese un texto independiente; en cursivas si sí lo
                                 fuese), (número de páginas si es un artículo en revista). Ciudad de la publicación:
                                 Editorial (si la hubiera). Año de publicación.</p>
                             <br>
                             <h4 class="lista__texto">Libros de autor único</h4>
-                            
+
                             <p>APELLIDO, Nombre</p>
-                            <p>AÑO       <i>Título del libro</i>. Ciudad: Editorial. Páginas.</p>    
+                            <p>AÑO       <i>Título del libro</i>. Ciudad: Editorial. Páginas.</p>
                             <br>
                             <h4 class="lista__texto">Dos o más obras de un mismo autor</h4>
-                            
+
                             <p>APELLIDO, Nombre</p>
                             <p>AÑO       <i>Título del libro</i>. Ciudad: Editorial. Páginas.</p>
                             <p>AÑO       <i>Título del libro</i>. Ciudad: Editorial. Páginas.</p>
                             <p>AÑO       <i>Título del libro</i>. Ciudad: Editorial. Páginas.</p>
                             <br>
                             <h4 class="lista__texto">Dos o más libros de un autor en un mismo año</h4>
-                            
+
                             <p>
                                 APELLIDO, Nombre
                             </p>
@@ -510,14 +531,14 @@
                             <h4 class="lista__texto">
                                 Libros de dos o más autores
                             </h4>
-                            
+
                             <p>APELLIDO, Nombre; Nombre APELLIDO y Nombre APELLIDO</p>
                             <p>AÑO       <i>Título del libro</i>. Ciudad: Editorial. Páginas.</p>
                             <br>
                             <h4 class="lista__texto">
                                 En caso se trata de un capítulo dentro de un libro
                             </h4>
-                            
+
                             <p>APELLIDO, Nombre</p>
                             <p>AÑO       Título del capítulo. En: APELLIDO, Nombre. <i>Título del libro</i>.</p>
                             <p>Ciudad: Editorial. Páginas.</p>
@@ -525,7 +546,8 @@
                             <p>
                                 RODRÍGUEZ REA, Miguel Ángel
                             </p>
-                            <p>1996        «Del ritual de la crítica». En: <i>Tras las huellas de un crítico</i>. Lima: PUCP, pp. 23-24. 
+                            <p>1996        «Del ritual de la crítica». En: <i>Tras las huellas de un crítico</i>. Lima:
+                                PUCP, pp. 23-24. 
                             </p>
                             <br>
                             <h4 class="lista__texto">Artículos o capítulos dentro de un libro editado por un autor
@@ -535,40 +557,43 @@
                             </p>
                             <p>2002        «Fases y actitudes del método». En: RAIANO, Juana Mabel (ed.).
                                  <i>Método de estudio para la compnsión y el apndizaje significativo</i>. San Juan:
-                                 Papiro, pp. 69- 92
+                                Papiro, pp. 69- 92
                             </p>
                             <br>
                             <h4 class="lista__texto">En caso se trate de un artículo en una revista</h4>
                             <p>
                                 APELLIDO, Nombre
                             </p>
-                            <p>AÑO       Título del artículo. En: <i>Nombre de la revista</i>. 
+                            <p>AÑO       Título del artículo. En: <i>Nombre de la revista</i>.
                                 Ciudad: Editorial. Número, Volumen, Páginas.
-                             </p>
-                             <br>
+                            </p>
+                            <br>
                             <p>
                                 VALENCIA, Leonardo
                             </p>
-                            <p>2004        «Ishiguro, el destructor de su propia obra». En: <i>Férnix</i>, año 3, N° 4, pp. 40-55.
+                            <p>2004        «Ishiguro, el destructor de su propia obra». En: <i>Férnix</i>, año 3, N° 4,
+                                pp. 40-55.
                             </p>
                             <br>
                             <h4 class="lista__texto">En caso de páginas web</h4>
                             <p>
                                 APELLIDO, Nombre o NOMBRE DE LA INSTITUCIÓN
                             </p>
-                                
-                            <p>AÑO       “Título del artículo”. Nombre de la página web. Ciudad. Consulta: día de mes de año (fecha). URL de la página web.
+
+                            <p>AÑO       “Título del artículo”. Nombre de la página web. Ciudad. Consulta: día de mes de
+                                año (fecha). URL de la página web.
                             </p>
                             <br>
                             <p>
                                 CAMP, Craig
                             </p>
-                            <p> 2006        «Kissing the Frogs». En: <i>The eGullet Society for Culinary Arts and 
-                                Letters</i>. 6 de noviembre de 2006. Fecha de consulta: 10/11/2006.
-                                 http://forums.egullet.org/index.php?act=home
+                            <p> 2006        «Kissing the Frogs». En: <i>The eGullet Society for Culinary Arts and
+                                    Letters</i>. 6 de noviembre de 2006. Fecha de consulta: 10/11/2006.
+                                http://forums.egullet.org/index.php?act=home
                             </p>
                             <br>
-                            <h4 class="lista__texto">Libros en idioma extranjero: debe respetarse su grafía, además de los usos
+                            <h4 class="lista__texto">Libros en idioma extranjero: debe respetarse su grafía, además de
+                                los usos
                                 propios de cada lengua.</h4>
                             <p>
                                 BEVERLY, John
@@ -578,8 +603,8 @@
                             </p>
                             <br>
                             <h4 class="lista__texto"> Artículos o columnas dentro de periódicos </h4>
-                           <p>
-                               DELGADO, Úrsula
+                            <p>
+                                DELGADO, Úrsula
                             </p>
                             <p>2006        «Consuma más fruta». En: <i>Perú 21</i>. 16 de diciembre.
                             </p>
@@ -589,7 +614,8 @@
                             <p>
                                 BOYLE, Anthony
                             </p>
-                            <p>1983        «The Epistemological Evolution of Renaissance Utopian Literature, 1516-1657». Tesis doctoral. Universidad de Nueva York.
+                            <p>1983        «The Epistemological Evolution of Renaissance Utopian Literature, 1516-1657».
+                                Tesis doctoral. Universidad de Nueva York.
                             </p>
 
                         </li>
@@ -643,7 +669,7 @@
                         <span>/</span>
                         <p class="destino">Información para lectores</p>
                     </div>
-                
+
                     <p class="lectores__contenido">
                         Animamos a los lectores/as a registrarse en el servicio
                         de notificación de publicaciones de la revista. Utilice el
@@ -654,10 +680,10 @@
                         también permite que se le atribuya a la revista un
                         cierto nivel de apoyo o número de lectores/as.
                         Consulte la Declaración de privacidad de la revista,
-                    que garantiza a los lectores/as que sus nombres y
-                    direcciones de correo electrónico no se usarán con
-                    otros fines.
-                </p>
+                        que garantiza a los lectores/as que sus nombres y
+                        direcciones de correo electrónico no se usarán con
+                        otros fines.
+                    </p>
 
                 </div>
                 <div class="autores tab no-display" id="autores">
@@ -721,44 +747,147 @@
                 <h3 class="info__titulo">Información</h3>
                 <ul class="info__menu">
                     <li class="info__item">
-                        <button class="info__link tablink" 
-                            onclick="openTab(event, 'lectores')">
+                        <button class="info__link tablink" onclick="openTab(event, 'lectores')">
                             Para lectores
                         </button>
                     </li>
                     <li class="info__item">
-                        <button class="info__link tablink" 
-                            onclick="openTab(event, 'autores')"> 
+                        <button class="info__link tablink" onclick="openTab(event, 'autores')">
                             Para autores
                         </button>
                     </li>
                     <li class=" info__item">
-                        <button class="info__link tablink" 
-                            onclick="openTab(event, 'bibliotecarios')")>
+                        <button class="info__link tablink" onclick="openTab(event, 'bibliotecarios')" )>
                             Para bibliotecarios
                         </button>
                     </li>
                 </ul>
             </div>
-            
+            <div class="aside__keywords">
+                <h3 class="info__titulo">Palabras clave</h3>
+                <div class="content" id="wordcloud">
+                <svg viewBox="0 0 300 200" width="100%">
+                    <g transform="translate(150,100)"><text text-anchor="middle"
+                            transform="translate(-30,-30)rotate(-30)"
+                            style="font-size: 32px; font-family: serif; fill: rgb(149, 50, 85); cursor: pointer; opacity: 0.5;">Pedagogía</text><text
+                            text-anchor="middle" transform="translate(-34,29)rotate(-30)"
+                            style="font-size: 25px; font-family: serif; fill: rgb(170, 145, 57); cursor: pointer; opacity: 0.5;">gestión</text><text
+                            text-anchor="middle" transform="translate(27,14)rotate(30)"
+                            style="font-size: 18px; font-family: serif; fill: rgb(47, 63, 115); cursor: pointer; opacity: 0.5;">Gestión
+                            del diseño</text><text text-anchor="middle" transform="translate(-67,-53)rotate(-60)"
+                            style="font-size: 18px; font-family: serif; fill: rgb(37, 112, 89); cursor: pointer; opacity: 0.5;">creatividad</text><text
+                            text-anchor="middle" transform="translate(-37,53)rotate(-30)"
+                            style="font-size: 18px; font-family: serif; fill: rgb(149, 50, 85); cursor: pointer; opacity: 0.5;">Arguedas</text><text
+                            text-anchor="middle" transform="translate(103,46)rotate(-90)"
+                            style="font-size: 18px; font-family: serif; fill: rgb(170, 145, 57); cursor: pointer; opacity: 0.5;">Comunidad</text><text
+                            text-anchor="middle" transform="translate(-59,13)rotate(-60)"
+                            style="font-size: 18px; font-family: serif; fill: rgb(47, 63, 115); cursor: pointer; opacity: 0.5;">brechas</text><text
+                            text-anchor="middle" transform="translate(17,-33)rotate(30)"
+                            style="font-size: 12px; font-family: serif; fill: rgb(37, 112, 89); cursor: pointer; opacity: 0.5;">Ratios</text><text
+                            text-anchor="middle" transform="translate(77,-45)rotate(-60)"
+                            style="font-size: 12px; font-family: serif; fill: rgb(149, 50, 85); cursor: pointer; opacity: 0.5;">Colaboración
+                            financieros</text><text text-anchor="middle" transform="translate(53,52)rotate(-60)"
+                            style="font-size: 12px; font-family: serif; fill: rgb(170, 145, 57); cursor: pointer; opacity: 0.5;">ajustes</text><text
+                            text-anchor="middle" transform="translate(34,50)rotate(-60)"
+                            style="font-size: 12px; font-family: serif; fill: rgb(47, 63, 115); cursor: pointer; opacity: 0.5;">solvencia</text><text
+                            text-anchor="middle" transform="translate(-35,-67)rotate(-90)"
+                            style="font-size: 12px; font-family: serif; fill: rgb(37, 112, 89); cursor: pointer; opacity: 0.5;">NIC
+                            23</text><text text-anchor="middle" transform="translate(-101,31)rotate(60)"
+                            style="font-size: 12px; font-family: serif; fill: rgb(149, 50, 85); cursor: pointer; opacity: 0.5;">reclasificaciones</text><text
+                            text-anchor="middle" transform="translate(4,-25)rotate(30)"
+                            style="font-size: 12px; font-family: serif; fill: rgb(170, 145, 57); cursor: pointer; opacity: 0.5;">museos</text><text
+                            text-anchor="middle" transform="translate(39,82)rotate(0)"
+                            style="font-size: 12px; font-family: serif; fill: rgb(47, 63, 115); cursor: pointer; opacity: 0.5;">museos
+                            de memoria</text><text text-anchor="middle" transform="translate(114,17)rotate(-90)"
+                            style="font-size: 12px; font-family: serif; fill: rgb(37, 112, 89); cursor: pointer; opacity: 0.5;">Banca
+                            por Internet</text><text text-anchor="middle" transform="translate(-90,-54)rotate(-30)"
+                            style="font-size: 12px; font-family: serif; fill: rgb(149, 50, 85); cursor: pointer; opacity: 0.5;">NIC
+                            41</text><text text-anchor="middle" transform="translate(-127,14)rotate(-90)"
+                            style="font-size: 12px; font-family: serif; fill: rgb(170, 145, 57); cursor: pointer; opacity: 0.5;">Silicon
+                            Valley</text><text text-anchor="middle" transform="translate(0,55)rotate(-30)"
+                            style="font-size: 12px; font-family: serif; fill: rgb(47, 63, 115); cursor: pointer; opacity: 0.5;">Conocimiento</text><text
+                            text-anchor="middle" transform="translate(-66,82)rotate(0)"
+                            style="font-size: 12px; font-family: serif; fill: rgb(37, 112, 89); cursor: pointer; opacity: 0.5;">gestión
+                            estratégica</text><text text-anchor="middle" transform="translate(12,-90)rotate(0)"
+                            style="font-size: 12px; font-family: serif; fill: rgb(149, 50, 85); cursor: pointer; opacity: 0.5;">Innovación
+                            regional</text><text text-anchor="middle" transform="translate(128,-42)rotate(-90)"
+                            style="font-size: 12px; font-family: serif; fill: rgb(170, 145, 57); cursor: pointer; opacity: 0.5;">Arte
+                            de la Cultura</text><text text-anchor="middle" transform="translate(99,-34)rotate(-90)"
+                            style="font-size: 12px; font-family: serif; fill: rgb(47, 63, 115); cursor: pointer; opacity: 0.5;">medialidad</text><text
+                            text-anchor="middle" transform="translate(52,-77)rotate(0)"
+                            style="font-size: 12px; font-family: serif; fill: rgb(37, 112, 89); cursor: pointer; opacity: 0.5;">Value
+                            Star</text><text text-anchor="middle" transform="translate(9,28)rotate(0)"
+                            style="font-size: 12px; font-family: serif; fill: rgb(149, 50, 85); cursor: pointer; opacity: 0.5;">Poisson</text><text
+                            text-anchor="middle" transform="translate(-4,-79)rotate(0)"
+                            style="font-size: 12px; font-family: serif; fill: rgb(170, 145, 57); cursor: pointer; opacity: 0.5;">Lambda</text><text
+                            text-anchor="middle" transform="translate(-99,-82)rotate(0)"
+                            style="font-size: 12px; font-family: serif; fill: rgb(47, 63, 115); cursor: pointer; opacity: 0.5;">recuperación</text><text
+                            text-anchor="middle" transform="translate(72,10)rotate(30)"
+                            style="font-size: 12px; font-family: serif; fill: rgb(37, 112, 89); cursor: pointer; opacity: 0.5;">talento</text><text
+                            text-anchor="middle" transform="translate(-113,64)rotate(-60)"
+                            style="font-size: 12px; font-family: serif; fill: rgb(149, 50, 85); cursor: pointer; opacity: 0.5;">evaluación</text><text
+                            text-anchor="middle" transform="translate(67,59)rotate(-30)"
+                            style="font-size: 12px; font-family: serif; fill: rgb(170, 145, 57); cursor: pointer; opacity: 0.5;">datos</text><text
+                            text-anchor="middle" transform="translate(33,-52)rotate(-30)"
+                            style="font-size: 12px; font-family: serif; fill: rgb(47, 63, 115); cursor: pointer; opacity: 0.5;">MTBF</text><text
+                            text-anchor="middle" transform="translate(84,-24)rotate(-60)"
+                            style="font-size: 12px; font-family: serif; fill: rgb(37, 112, 89); cursor: pointer; opacity: 0.5;">MDT</text><text
+                            text-anchor="middle" transform="translate(-106,-61)rotate(-30)"
+                            style="font-size: 12px; font-family: serif; fill: rgb(149, 50, 85); cursor: pointer; opacity: 0.5;">liderazgo</text><text
+                            text-anchor="middle" transform="translate(-117,-29)rotate(30)"
+                            style="font-size: 12px; font-family: serif; fill: rgb(170, 145, 57); cursor: pointer; opacity: 0.5;">MTTR</text><text
+                            text-anchor="middle" transform="translate(129,51)rotate(-90)"
+                            style="font-size: 12px; font-family: serif; fill: rgb(47, 63, 115); cursor: pointer; opacity: 0.5;">herramienta
+                            TIC</text><text text-anchor="middle" transform="translate(107,-55)rotate(60)"
+                            style="font-size: 12px; font-family: serif; fill: rgb(37, 112, 89); cursor: pointer; opacity: 0.5;">ventas</text>
+                    </g>
+                </svg>
+                </div>
+            </div>
         </aside>
     </main>
     <footer id="footer" class="w-100p">
-        <h1></h1>
+        <div class="footer__row">
+            <div class="footer__col">
+                <h3 class="footer__enlaces">Enlaces relacionados</h3>
+                <ul class="enlaces__items">
+                    <li>
+                        <a href="https://lavaperu.com/">¿Qué es LAVAPERÚ?</a>
+                        
+                    </li>
+                    <li>
+                        <a href="https://fehlima.com/">Festival de las Humanidades</a>
+                       
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__contactos">Contacto</h3>
+                <ul>
+                    <li><i class="far fa-envelope"></i> prensalavaperu@gmail.com</li>
+                    <li><i class="fab fa-whatsapp"></i> +51 951 819 737</li>
+                </ul>
+            </div>
+        </div>
+        <h5 class="copyright"><i class="far fa-copyright"></i> 2016-2022 Laboratorio de Vanguardia Pedagógica Peruana
+        </h5>
     </footer>
 </body>
 <script>
     var current_tab = 'inicio-tab';
-    function openTab(evt, tabName){
+    function openTab(evt, tabName) {
         document.getElementById(current_tab)
             .style.display = "none";
         document.getElementById(tabName)
             .style.display = "block";
 
-        current_tab  = tabName;
-    } 
-    function changeTheme(){
+        current_tab = tabName;
+    }
+    function changeTheme() {
         const body = document.getElementById('body');
+        const mode = document.getElementById('mode')
         body.classList.toggle('dark-theme');
+        mode.classList.toggle('fa-moon');
+        mode.classList.toggle('fa-sun');
     }
 </script>

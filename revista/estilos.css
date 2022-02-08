@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 :root{
     /*colores*/
     --orange:  rgb(211, 93, 25);
@@ -7,20 +8,20 @@
     --shadow:rgb(0, 0, 0, 0.2);
     
     /*tamanos*/
-    --large: 5rem;
-    --medium:3.5rem;
-    --small:1.5rem;
+    --large: 3.5rem;
+    --medium:1.5rem;
+    --small:1rem;
 }
 body.dark-theme{
     background-color: var(--fondo);
     --texto: #fff;
-    --fondo: #121212;
+    --fondo: #321216;
     --shadow:rgba(255, 255, 255, 0.2);
 }
 * {
     margin: 0px;
     padding: 0px;
-    font-family: "Roboto Condensed", Sans-serif;
+    font-family:  Sans-serif;
     
     text-decoration: none;
     box-sizing: border-box;
@@ -59,52 +60,90 @@ a{
 .portada__logo{
     cursor: pointer;
 }
-.portada__logo:active{
-    transform: rotate(5deg);
-
-}
 .portada__marca {
-    font-variant: small-caps;
-    font-size: 20px;
-    border-left: 2px solid black;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-left: 2px solid #321216;
     padding: 5px 10px;
-    color: black;
-    line-height: 20px;
+    color: #321216;
+    line-height: 17.5px;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;                                      
+
 }
 
 .portada__banner {
     width:70%;
-    margin: 80px auto 0px;   
+    margin: 80px auto 0px;
+    font-weight: bold;
+    
 }
 
 .banner__titulo {
     font-size: var(--large);
+    color: #321216;
+    font-family: 'Roboto Condensed', sans-serif;                                      
+
+    font-weight:700;
+
 }
 
 .banner__descripcion {
-    color: var(--white)
+    color: var(--white);
+    font-size: var(--medium);
+    font-family: 'Roboto Condensed', sans-serif;                                      
+
 }
 
 .header__nav {
     border-bottom: 1px solid var(--orange);
+    padding: 0px 15%;
+    
+    justify-content: space-between;
 }
 
 .nav__menu {
-    padding: 0px 15%;
-    justify-content: space-around;
     list-style: none;
+    font-size: 14px;
+    color:var(--orange);
+    gap:15px
 }
 
 .nav__item {  
     cursor: pointer;
-    padding: 10px 15px;
-    color:var(--orange);
-    font-size: 15px;
+    padding: 10px 0px;
 }
-.nav__item:hover{
-    list-style:disc
+.nav__form{
+    
+    justify-content: space-around;
+    color: var(--orange);
 }
-
+.nav__buscar{
+    border: none;
+    background: none;
+    color: var(--orange);
+    cursor: pointer;
+}
+#nav__input{
+    width: 100px;
+    padding: 5px 10px;
+    border: none;
+    background: none;
+    color: var(--texto);
+    font-size: 14px;
+    transition:0.5s ease;
+}
+#nav__input:focus{
+    width: 200px;
+    margin: 0px 10px;
+    transition:0.5s ease;
+}
+#mode{
+    cursor: pointer;
+}
+#mode:active{
+    opacity: 0;
+}
 .about__menu, .normas__menu, .archivo__menu {
     display: none;
     
@@ -123,8 +162,7 @@ a{
 
  .normas__link, .archivo__link, .about__link{
     color: var(--orange);
-    padding: 10px 25px;
-    font-size: 15px;
+    padding: 10px 20px;
     display: grid;
     cursor: pointer;
 }
@@ -147,24 +185,25 @@ a{
     margin: 50px auto;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    gap:25px;
+    gap:5vw;
     
 }
 
 .aside{
-    min-height: 400px;
+    
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: ;
     gap: 25px;
     
 }
+
 .aside h3{
     color: var(--texto);
     margin: 20px 0px;
 }
-.social__icons{
-    
+
+.social__icons{   
     height:70px;
     list-style: none;
     
@@ -203,11 +242,10 @@ p{
     line-height: normal;
 }
 .inicio__actual{
-    margin: 10px 100px;
-
+    margin: 0px 50px;
 }
 .titulo-h3{
-    padding: 20px 0px ;
+    padding: 15px 0px ;
     font-size: 2rem;
     color: var(--texto);
     font-weight: normal;
@@ -243,24 +281,59 @@ p{
 }
 #footer{
     background-image: url("./img/footer.jpg");
-    height: 150px;
     background-size: cover;
     background-position: center ;
     
+    display: grid;
+    align-items: center;
+}
+.footer__col ul{
+    list-style: none;
+    line-height: 30px;
+    
+}
+.footer__row ul a{
+    color: #321216;
+}
+
+.footer__row{
+    width:70%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 17.5px;
+    padding: 35px 0px;
+    gap: 25px;
+}
+.footer__col h3{
+    margin: 15px 0px;
+}
+.enlaces__items li{
+    border-bottom: 1px solid;
+}
+.copyright{
+    width:70%;
+    margin: 0px auto;
+    font-size: 15px;
+    font-weight: 100;
+    padding: 10px;
 }
 @media only screen and (max-width:900px) {
     .banner__titulo {
-        font-size: var(--medium);
+        font-size: 2.5rem;
     }
     .banner__descripcion {
-        font-size: var(--small);
+        font-size: 1.5rem;
     }
     .portada__brand, .portada__banner {
         width: 90%;
 
     }
-    .nav__menu {
-        padding: 0px;
+    .header__nav {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0px 5%;
     }
     .contenedor{
         width: 90%;
@@ -272,13 +345,30 @@ p{
         justify-content: space-around;
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: center;
+        
         gap: 0px;
     }
+    .aside > div{
+        width: 200px;
+        display: grid;
+        justify-content: center;
+        height:175px;
+    }
+    .footer__row, .copyright{
+        width:90%;
+        margin: 0px auto;
+    }
 }
-@media (max-width:550px) {
+@media (max-width:650px) {
     .nav__menu {
         display: grid;
         place-items: center;
+    }
+    .header__nav{
+        justify-content: space-around;
+        
+    }
+    .footer__row{
+        grid-template-columns: 1fr;
     }
 }
