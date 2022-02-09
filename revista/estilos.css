@@ -190,7 +190,6 @@ a{
 }
 
 .aside{
-    
     display: flex;
     flex-direction: column;
     align-items: ;
@@ -204,9 +203,12 @@ a{
 }
 
 .social__icons{   
-    height:70px;
+    height:80px;
     list-style: none;
     
+}
+.social__icons img{
+    height: 80px;
 }
 .info__menu{
     list-style: none;

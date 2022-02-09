@@ -1,0 +1,83 @@
+<header class="header">
+    <div class="header__portada">
+        <div class="portada__brand flex">
+            <img src="./img/Recurso 5.png" alt="" class="portada__logo h-100p">
+            <p class="portada__marca">
+                Laboratorio de <br> Vanguardia <br> Pedagógica
+            </p> 
+        </div>
+        <div class="portada__banner">
+            <h1 class="banner__titulo">REVISTA TXT</h1>
+            <h1 class="banner__descripcion">DE HUMANIDADES Y CIENCIAS SOCIALES
+            </h1>
+        </div>
+    </div>
+    <nav class="header__nav flex">
+        <ul class="nav__menu flex">
+            <li class="menu__inicio tablink nav__item" onclick="openTab(event, 'inicio-tab')">
+                Inicio
+            </li>
+            <li id="about" class="nav__item">
+                <div class="">
+                    Acerca de <i class="fas fa-sort-down"></i>
+                </div>
+
+                <ul class="about__menu">
+                    <li class="tablink about__link" onclick="openTab(event, 'revista')">
+                        Sobre la revista
+
+                    </li>
+                    <li class="tablink about__link" onclick="openTab(event, 'equipo')">
+                        Equipo editorial
+                    </li>
+                    <li class="tablink about__link" onclick="openTab(event, 'contacto')">
+                        Contacto
+                    </li>
+                </ul>
+            </li>
+
+            <li class="tablink nav__item" onclick="openTab(event, 'actual')">
+                Actual (2022)
+            </li>
+
+            <li id="archivo" class="nav__item">
+                <div>
+                    Archivo <i class="fas fa-sort-down"></i>
+                </div>
+                <ul class="archivo__menu">
+                    <li class="tablink archivo__link" onclick="openTab(event, 'anteriores')">
+                        Anteriores (2021)
+                    </li>
+                    <li class="tablink archivo__link" onclick="openTab(event, 'historico')">
+                        Archivo histórico (2009-2014)
+                    </li>
+                </ul>
+            </li>
+
+            <li id="normas" class="nav__item">
+                <div>
+                    Normas Editoriales <i class="fas fa-sort-down"></i>
+                </div>
+                <ul class="normas__menu">
+                    <li class="normas__item normas__link" onclick="openTab(event, 'normas__autores')">
+                        Normas para autores
+                    </li>
+                    <li class="normas__item normas__link" onclick="openTab(event, 'politica')">
+                        Política de Acceso Abierto
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+        <form action="" class="nav__form flex">
+            <div>
+                <button class="nav__buscar">
+                    <i class="fas fa-search"></i>                    
+                </button>
+                <input type="text" name="" id="nav__input" placeholder="Buscar">
+            </div>
+            <i class="fas fa-moon " id="mode" onclick="changeTheme()"></i>
+        </form>
+    </nav>
+
+</header>

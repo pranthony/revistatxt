@@ -1,0 +1,118 @@
+<aside class="aside ">
+    <div class="aside__social">
+        <h3 class="social__titulo ">Redes sociales</h3>
+        <ul class="social__icons flex">
+            <li class="icons__item">
+                <a href="https://www.facebook.com/lavaperu/">
+                    <img src="./img/logo_fb.png" alt="facebook" class="">
+                </a>
+            </li>
+            <li class="icons__item">
+                <a href="https://www.instagram.com/proyectolavaperu/?hl=es">
+                    <img src="./img/logo_ig.png" alt="instagram" class="">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="aside__info">
+        <h3 class="info__titulo">Información</h3>
+        <ul class="info__menu">
+            <li class="info__item">
+                <button class="info__link tablink" onclick="openTab(event, 'lectores')">
+                    Para lectores
+                </button>
+            </li>
+            <li class="info__item">
+                <button class="info__link tablink" onclick="openTab(event, 'autores')">
+                    Para autores
+                </button>
+            </li>
+            <li class=" info__item">
+                <button class="info__link tablink" onclick="openTab(event, 'bibliotecarios')" )>
+                    Para bibliotecarios
+                </button>
+            </li>
+        </ul>
+    </div>
+    <div class="aside__keywords">
+        <h3 class="info__titulo">Palabras clave</h3>
+        <div class="content" id="wordcloud">
+        <svg viewBox="0 0 300 200" width="100%">
+            <g transform="translate(150,100)"><text text-anchor="middle"
+                    transform="translate(-30,-30)rotate(-30)"
+                    style="font-size: 32px; font-family: serif; fill: rgb(149, 50, 85); cursor: pointer; opacity: 0.5;">Pedagogía</text><text
+                    text-anchor="middle" transform="translate(-34,29)rotate(-30)"
+                    style="font-size: 25px; font-family: serif; fill: rgb(170, 145, 57); cursor: pointer; opacity: 0.5;">gestión</text><text
+                    text-anchor="middle" transform="translate(27,14)rotate(30)"
+                    style="font-size: 18px; font-family: serif; fill: rgb(47, 63, 115); cursor: pointer; opacity: 0.5;">Gestión
+                    del diseño</text><text text-anchor="middle" transform="translate(-67,-53)rotate(-60)"
+                    style="font-size: 18px; font-family: serif; fill: rgb(37, 112, 89); cursor: pointer; opacity: 0.5;">creatividad</text><text
+                    text-anchor="middle" transform="translate(-37,53)rotate(-30)"
+                    style="font-size: 18px; font-family: serif; fill: rgb(149, 50, 85); cursor: pointer; opacity: 0.5;">Arguedas</text><text
+                    text-anchor="middle" transform="translate(103,46)rotate(-90)"
+                    style="font-size: 18px; font-family: serif; fill: rgb(170, 145, 57); cursor: pointer; opacity: 0.5;">Comunidad</text><text
+                    text-anchor="middle" transform="translate(-59,13)rotate(-60)"
+                    style="font-size: 18px; font-family: serif; fill: rgb(47, 63, 115); cursor: pointer; opacity: 0.5;">brechas</text><text
+                    text-anchor="middle" transform="translate(17,-33)rotate(30)"
+                    style="font-size: 12px; font-family: serif; fill: rgb(37, 112, 89); cursor: pointer; opacity: 0.5;">Ratios</text><text
+                    text-anchor="middle" transform="translate(77,-45)rotate(-60)"
+                    style="font-size: 12px; font-family: serif; fill: rgb(149, 50, 85); cursor: pointer; opacity: 0.5;">Colaboración
+                    financieros</text><text text-anchor="middle" transform="translate(53,52)rotate(-60)"
+                    style="font-size: 12px; font-family: serif; fill: rgb(170, 145, 57); cursor: pointer; opacity: 0.5;">ajustes</text><text
+                    text-anchor="middle" transform="translate(34,50)rotate(-60)"
+                    style="font-size: 12px; font-family: serif; fill: rgb(47, 63, 115); cursor: pointer; opacity: 0.5;">solvencia</text><text
+                    text-anchor="middle" transform="translate(-35,-67)rotate(-90)"
+                    style="font-size: 12px; font-family: serif; fill: rgb(37, 112, 89); cursor: pointer; opacity: 0.5;">NIC
+                    23</text><text text-anchor="middle" transform="translate(-101,31)rotate(60)"
+                    style="font-size: 12px; font-family: serif; fill: rgb(149, 50, 85); cursor: pointer; opacity: 0.5;">reclasificaciones</text><text
+                    text-anchor="middle" transform="translate(4,-25)rotate(30)"
+                    style="font-size: 12px; font-family: serif; fill: rgb(170, 145, 57); cursor: pointer; opacity: 0.5;">museos</text><text
+                    text-anchor="middle" transform="translate(39,82)rotate(0)"
+                    style="font-size: 12px; font-family: serif; fill: rgb(47, 63, 115); cursor: pointer; opacity: 0.5;">museos
+                    de memoria</text><text text-anchor="middle" transform="translate(114,17)rotate(-90)"
+                    style="font-size: 12px; font-family: serif; fill: rgb(37, 112, 89); cursor: pointer; opacity: 0.5;">Banca
+                    por Internet</text><text text-anchor="middle" transform="translate(-90,-54)rotate(-30)"
+                    style="font-size: 12px; font-family: serif; fill: rgb(149, 50, 85); cursor: pointer; opacity: 0.5;">NIC
+                    41</text><text text-anchor="middle" transform="translate(-127,14)rotate(-90)"
+                    style="font-size: 12px; font-family: serif; fill: rgb(170, 145, 57); cursor: pointer; opacity: 0.5;">Silicon
+                    Valley</text><text text-anchor="middle" transform="translate(0,55)rotate(-30)"
+                    style="font-size: 12px; font-family: serif; fill: rgb(47, 63, 115); cursor: pointer; opacity: 0.5;">Conocimiento</text><text
+                    text-anchor="middle" transform="translate(-66,82)rotate(0)"
+                    style="font-size: 12px; font-family: serif; fill: rgb(37, 112, 89); cursor: pointer; opacity: 0.5;">gestión
+                    estratégica</text><text text-anchor="middle" transform="translate(12,-90)rotate(0)"
+                    style="font-size: 12px; font-family: serif; fill: rgb(149, 50, 85); cursor: pointer; opacity: 0.5;">Innovación
+                    regional</text><text text-anchor="middle" transform="translate(128,-42)rotate(-90)"
+                    style="font-size: 12px; font-family: serif; fill: rgb(170, 145, 57); cursor: pointer; opacity: 0.5;">Arte
+                    de la Cultura</text><text text-anchor="middle" transform="translate(99,-34)rotate(-90)"
+                    style="font-size: 12px; font-family: serif; fill: rgb(47, 63, 115); cursor: pointer; opacity: 0.5;">medialidad</text><text
+                    text-anchor="middle" transform="translate(52,-77)rotate(0)"
+                    style="font-size: 12px; font-family: serif; fill: rgb(37, 112, 89); cursor: pointer; opacity: 0.5;">Value
+                    Star</text><text text-anchor="middle" transform="translate(9,28)rotate(0)"
+                    style="font-size: 12px; font-family: serif; fill: rgb(149, 50, 85); cursor: pointer; opacity: 0.5;">Poisson</text><text
+                    text-anchor="middle" transform="translate(-4,-79)rotate(0)"
+                    style="font-size: 12px; font-family: serif; fill: rgb(170, 145, 57); cursor: pointer; opacity: 0.5;">Lambda</text><text
+                    text-anchor="middle" transform="translate(-99,-82)rotate(0)"
+                    style="font-size: 12px; font-family: serif; fill: rgb(47, 63, 115); cursor: pointer; opacity: 0.5;">recuperación</text><text
+                    text-anchor="middle" transform="translate(72,10)rotate(30)"
+                    style="font-size: 12px; font-family: serif; fill: rgb(37, 112, 89); cursor: pointer; opacity: 0.5;">talento</text><text
+                    text-anchor="middle" transform="translate(-113,64)rotate(-60)"
+                    style="font-size: 12px; font-family: serif; fill: rgb(149, 50, 85); cursor: pointer; opacity: 0.5;">evaluación</text><text
+                    text-anchor="middle" transform="translate(67,59)rotate(-30)"
+                    style="font-size: 12px; font-family: serif; fill: rgb(170, 145, 57); cursor: pointer; opacity: 0.5;">datos</text><text
+                    text-anchor="middle" transform="translate(33,-52)rotate(-30)"
+                    style="font-size: 12px; font-family: serif; fill: rgb(47, 63, 115); cursor: pointer; opacity: 0.5;">MTBF</text><text
+                    text-anchor="middle" transform="translate(84,-24)rotate(-60)"
+                    style="font-size: 12px; font-family: serif; fill: rgb(37, 112, 89); cursor: pointer; opacity: 0.5;">MDT</text><text
+                    text-anchor="middle" transform="translate(-106,-61)rotate(-30)"
+                    style="font-size: 12px; font-family: serif; fill: rgb(149, 50, 85); cursor: pointer; opacity: 0.5;">liderazgo</text><text
+                    text-anchor="middle" transform="translate(-117,-29)rotate(30)"
+                    style="font-size: 12px; font-family: serif; fill: rgb(170, 145, 57); cursor: pointer; opacity: 0.5;">MTTR</text><text
+                    text-anchor="middle" transform="translate(129,51)rotate(-90)"
+                    style="font-size: 12px; font-family: serif; fill: rgb(47, 63, 115); cursor: pointer; opacity: 0.5;">herramienta
+                    TIC</text><text text-anchor="middle" transform="translate(107,-55)rotate(60)"
+                    style="font-size: 12px; font-family: serif; fill: rgb(37, 112, 89); cursor: pointer; opacity: 0.5;">ventas</text>
+            </g>
+        </svg>
+        </div>
+    </div>
+</aside>
