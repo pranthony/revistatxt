@@ -1,7 +1,7 @@
 <div class="articulo__actual">
     <div class="actual tab no-display" id="actual">
         <div class="path">
-            <a href="revista.html">
+            <a href="">
                 <h4>Inicio</h4>
             </a>
             <span>/</span>

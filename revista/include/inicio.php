@@ -9,7 +9,7 @@
             <b>La Revista TXT de Humanidades y Ciencias Sociales</b>
             (segunda época) es una
             publicación anual y es editada por el Área de Investigación del proyecto
-            LAVAPERÚ (<a href="https://lavaperu.com/">www.lavaperu.com</a>). La revista tiene como objetivo
+            LAVAPERÚ (<a href="https://lavaperu.com/" target="_banck">www.lavaperu.com</a>). La revista tiene como objetivo
             aportar en la
             difusión, promoción y desarrollo de las humanidades, las ciencias sociales, el arte y la
             pedagogía en el Perú. Por ello, nuestra finalidad es difundir y publicar estudios y/o

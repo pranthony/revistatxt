@@ -13,11 +13,12 @@
         <?php require "./include/header.html"; ?>
         <main class="contenedor">
             <section class="articulo">
-                <?php require 'include/inicio.html' ?>
+                <?php require 'include/inicio.php' ?>
                 <?php require 'include/acerca.html' ?>
-                <?php require 'include/actual.html' ?>
-                <?php require 'include/archivo.html' ?>
+                <?php require 'include/actual.php' ?>
+                <?php require 'include/archivo.php' ?>
                 <?php require 'include/normas.html' ?>
+                <?php require 'include/informacion.html' ?>
             </section>
             <?php require 'include/aside.html' ?>
         </main>

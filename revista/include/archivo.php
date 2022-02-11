@@ -1,7 +1,7 @@
 <div class="articulo__achivo">
     <div class="anteriores tab no-display" id="anteriores">
         <div class="path">
-            <a href="revista.html">
+            <a href="">
                 <h4>Inicio</h4>
             </a>
             <span>/</span>
@@ -28,7 +28,7 @@
     </div>
     <div class="historico tab no-display" id="historico">
         <div class="path">
-            <a href="revista.html">
+            <a href="">
                 <h4>Inicio</h4>
             </a>
             <span>/</span>
@@ -38,6 +38,7 @@
 
         </p>
         <!--Iterar los elementos historicos aqui-->
+        
         <hr>
         <img src="" alt="">
         <h4></h4>
