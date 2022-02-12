@@ -7,6 +7,7 @@
     --fondo: #fff;
     --shadow:rgb(0, 0, 0, 0.2);
     
+    --light-orange: rgb(211, 93, 25, 0.3);
     /*tamanos*/
     --large: 3.5rem;
     --medium:1.5rem;
@@ -29,11 +30,13 @@ body.dark-theme{
 a{
     color:var(--orange)
 }
+span{
+    color: var(--texto)
+}
 .flex {
     display: flex;
     align-items: center;
 }
-
 .grid {
     display: grid;
 }
@@ -104,7 +107,7 @@ a{
 
 .nav__menu {
     list-style: none;
-    font-size: 14px;
+    font-size: 15px;
     color:var(--orange);
     gap:15px
 }
@@ -188,11 +191,46 @@ a{
     gap:5vw;
     
 }
+.historico__revista{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    
+}
+.historico__revista > li{
+    width: 225px;
+    height: 310px;
+    margin:25px
+}
+.indice__item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+.detail__content{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap:25px
+}
+.content__picture{
+    display: grid;
+    place-items: center;
+    gap: 10px
+}
+
+.picture__button:hover{
+    background: var(--light-orange);
+}
+.picture__button{
+    padding: 10px 15px;
+    border: 1px solid var(--orange);
+    
+}
 .aside{
     display: flex;
     flex-direction: column;
-    align-items: ;
     gap: 25px;
     
 }

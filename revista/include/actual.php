@@ -12,16 +12,16 @@
 
         </p>
         <img src="" alt="">
-        <h3 class="titulo-h3">Artículos</h3>
+        <h3 class="titulo-h3">Proximamente</h3>
         <ul class="actual__articulos">
 
             <!--Iterar los articulos aqui-->
-            <li class="contenedor__articulo">
+            <li class="contenedor__articulo" hidden>
                 <a class="articulo__link" href="#">
-                    <h4>Amplificando el impacto del diseño a través de DesignOps</h4>
+                    <h4></h4>
                 </a>
-                <p class="articulo__autor">Alexandra Mengoni Leon</p>
-                <a href="" class="articulo__recurso">PDF</a>
+                <p class="articulo__autor"></p>
+                <a href="" class="articulo__recurso"></a>
             </li>
 
         </ul>

@@ -1,8 +1,10 @@
 <?php
 class Revista
 {
-    private $id;
-    private $nombre;
-    private $imagen;
+    public $id;
+    public $numero;
+    public $imagen;
+    public $fecha;
+    public $total_pag;
     
 }

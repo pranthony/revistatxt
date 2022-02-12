@@ -19,8 +19,8 @@
             semilla del proyecto LAVAPERÚ. <br>
             Periodicidad: ANUAL.
         </p>
-        <h3 class="inicio__actual titulo-h3">Número actual</h3>
+        <!-- <h3 class="inicio__actual titulo-h3">Número actual</h3> -->
         <!--Aqui se deben ingresar los numeros actules-->
-
+        
     </div>
 </div>
