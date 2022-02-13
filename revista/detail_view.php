@@ -59,7 +59,6 @@
         </main>
         <?php require 'include/footer.html' ?>
     </body>
-    <script src="./index.js">
-    </script>
+
 </html>
 

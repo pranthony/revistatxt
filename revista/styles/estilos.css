@@ -48,7 +48,7 @@ span{
     height: 100%;
 }
 .header__portada {
-    background-image: url(./img/banner-festival-de-las-humanidades.jpg);
+    background-image: url(../img/banner-festival-de-las-humanidades.jpg);
     background-position: center center;
     background-size: cover;
     padding: 25px 0px;
@@ -161,6 +161,7 @@ span{
     background: var(--fondo);
     box-shadow: 2px 4px 10px var(--shadow);
     border-radius: 5px;
+    transition:0.5s ease;
 }
 
  .normas__link, .archivo__link, .about__link{
@@ -199,9 +200,9 @@ span{
     
 }
 .historico__revista > li{
-    width: 225px;
-    height: 310px;
-    margin:25px
+    width: 205px;
+    height: 290px;
+    margin: 25px 10px;
 }
 .indice__item{
     display: flex;
@@ -320,7 +321,7 @@ p{
     
 }
 #footer{
-    background-image: url("./img/footer.jpg");
+    background-image: url("../img/footer.jpg");
     background-size: cover;
     background-position: center ;
     

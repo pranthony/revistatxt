@@ -1,4 +1,4 @@
-var current_tab = 'inicio-tab';
+/* var current_tab = 'inicio-tab';
 function openTab(evt, tabName) {
     document.getElementById(current_tab)
         .style.display = "none";
@@ -6,7 +6,7 @@ function openTab(evt, tabName) {
         .style.display = "block";
 
     current_tab = tabName;
-}
+} */
 function changeTheme() {
     const body = document.getElementById('body');
     const mode = document.getElementById('mode')
